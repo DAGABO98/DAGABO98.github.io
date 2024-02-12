@@ -5,8 +5,8 @@ function Footer() {
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
-        <div>
-          <img src="./img/logo.svg" alt="Logoipsum" />
+        <div className="footer--image--container">
+          <img src="./img/Website-Logo-Full.png" alt="Daniel Garces Logo" />
         </div>
         <div className="footer--items">
           <ul>
@@ -30,19 +30,6 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="MyPortfolio"
-                className="text-md"
-              >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
                 to="AboutMe"
                 className="text-md"
               >
@@ -56,10 +43,10 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="Contact"
+                to="Research"
                 className="text-md"
               >
-                Contact
+                Research
               </Link>
             </li>
             <li>
@@ -69,10 +56,62 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
+                to="ProfessionalExperience"
                 className="text-md"
               >
-                Testimonials
+                Professional Experience
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="Teaching"
+                className="text-md"
+              >
+                Teaching
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="Projects"
+                className="text-md"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="Hobbies"
+                className="text-md"
+              >
+                Hobbies
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="navbar--active-content"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                to="Contact"
+                className="text-md"
+              >
+                Contact
               </Link>
             </li>
           </ul>
@@ -172,8 +211,7 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Made with 💖 by John</p>
-        <div className="footer--social--icon">
+        <div className="footer--privacy--statement">
           <ul>
             <li>
               <Link

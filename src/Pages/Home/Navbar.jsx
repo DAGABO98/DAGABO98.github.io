@@ -27,7 +27,7 @@ function Navbar() {
     }, []);
 
     useEffect(() => {
-        if (window.innerWidth <= 1200) {
+        if (window.innerWidth <= 1500) {
             closeMenu();
         }
     }, []);
@@ -46,64 +46,94 @@ function Navbar() {
                 <ul>
                     <li>
                         <Link onClick={closeMenu}
-                        activeClass="navbar--active-content"
+                        activeClass="navbar--active--content"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
                         to="heroSection"
                         className="navbar--content"
                         >
-                            Home
+                            <span>Home</span>
                         </Link>
                     </li>
                     <li>
                         <Link onClick={closeMenu}
-                        activeClass="navbar--active-content"
+                        activeClass="navbar--active--content"
                         spy={true}
                         smooth={true}
-                        offset={-70}
-                        duration={500}
-                        to="MyPortfolio"
-                        className="navbar--content"
-                        >
-                            Portfolio
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={closeMenu}
-                        activeClass="navbar--active-content"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
                         duration={500}
                         to="AboutMe"
                         className="navbar--content"
                         >
-                            About Me
+                            <span>About Me</span>
                         </Link>
                     </li>
                     <li>
                         <Link onClick={closeMenu}
-                        activeClass="navbar--active-content"
+                        activeClass="navbar--active--content"
                         spy={true}
                         smooth={true}
-                        offset={-70}
                         duration={500}
-                        to="testimonial"
+                        to="Research"
                         className="navbar--content"
                         >
-                            Testimonials
+                            <span>Research</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={closeMenu}
+                        activeClass="navbar--active--content"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        to="ProfessionalExperience"
+                        className="navbar--content"
+                        >
+                            <span>Professional Experience</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={closeMenu}
+                        activeClass="navbar--active--content"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        to="Teaching"
+                        className="navbar--content"
+                        >
+                            <span>Teaching</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={closeMenu}
+                        activeClass="navbar--active--content"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        to="Projects"
+                        className="navbar--content"
+                        >
+                            <span>Projects</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link onClick={closeMenu}
+                        activeClass="navbar--active--content"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        to="Hobbies"
+                        className="navbar--content"
+                        >
+                            <span>Hobbies</span>
                         </Link>
                     </li>
                 </ul>
             </div>
             <Link
             onClick={closeMenu}
-            activeClass="navbar--active-content"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={500}
             to="Contact"
             className="btn btn-outline-primary"

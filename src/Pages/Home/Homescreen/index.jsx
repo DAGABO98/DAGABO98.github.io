@@ -1,19 +1,23 @@
 import AboutMe from "../AboutMe";
-import ContactMe from "../ContactMe";
 import Footer from "../Footer";
 import HeroSection from "../HeroSection";
-import MyPortfolio from "../MyPortfolio";
-import MySkills from "../MySkills";
-import Testimonial from "../Testimonials";
+import Hobbies from "../Hobbies";
+import ProfessionalExperience from "../ProfessionalExperience";
+import Projects from "../Projects";
+import Research from "../Research";
+import Teaching from "../Teaching";
+import ContactMe from "../ContactMe";
 
 export default function Home() {
     return (
         <>
             <HeroSection />
-            <MySkills />
             <AboutMe />
-            <MyPortfolio />
-            <Testimonial />
+            <Research />
+            <ProfessionalExperience />
+            <Teaching />
+            <Projects />
+            <Hobbies />
             <ContactMe />
             <Footer />
     </>

@@ -7,15 +7,13 @@ export default function HeroSection() {
             <div className="hero--section--content--box">
                 <div className="hero--section--content">
                     <p className="section--title">Hello, I'm Daniel</p>
-                    <h1 className="hero--section-title">
+                    <h1 className="hero--section--title">
                         <span className="hero--section-title--color">Computer Science</span>{" "}
                         <br />
                         PhD Student @ Harvard University
                     </h1>
-                    <p className="hero--section-description">
+                    <p className="hero--section--description">
                         I am currently working at <LinkRouter to="https://react.seas.harvard.edu/">REACT Lab</LinkRouter> under the supervision of <LinkRouter to="https://react.seas.harvard.edu/people/stephanie-gil">Stephanie Gil</LinkRouter>. 
-                        I am interested in cooperative multiagent reinforcement learning, especially in how we can integrate human data and input in current decision making frameworks. 
-                        Before joining REACT lab, I worked with Intel as a machine learning intern. I received my BS in Computer Engineering from Columbia University in 2021.
                     </p>
                     <LinkScroll
                     spy={true}

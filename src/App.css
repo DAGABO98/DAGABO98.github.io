@@ -22,6 +22,7 @@ p {
   --bg-shade: #fff0ea;
   --github: #e62872;
   --darkmagma: #5c0e0e;
+  --burnmagma: #924409;
   --black: #000000;
   --white: #ffffff;
 }
@@ -132,7 +133,7 @@ h2 {
 /* Skills & About Me */
 .section--title {
   color: var(--heading-color);
-  font-size: 21px;
+  font-size: 32px;
   text-align: center;
   font-style: normal;
   font-weight: 600;
@@ -177,7 +178,7 @@ h2 {
   list-style: none;
   display: flex;
   align-items: flex-start;
-  gap: 42.667px;
+  gap: 52px;
   text-decoration: none;
 }
 .navbar--items ul > li > a {
@@ -192,8 +193,12 @@ h2 {
   line-height: 24px;
   cursor: pointer;
 }
-.navbar--active-content {
+.navbar--active--content {
   color: var(--primary);
+}
+
+.navbar--active--content > span {
+  text-decoration: underline;
 }
 /* Navbar Styler Ends */
 
@@ -201,7 +206,7 @@ h2 {
 .hero--section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 133.333px 85.333px 133.333px;
+  padding: 133.333px 85.333px;
   align-items: center;
   justify-content: space-between;
   gap: 32px;
@@ -224,15 +229,19 @@ h2 {
 }
 .hero--section--title {
   color: var(--heading-color);
-  font-size: 74.667px;
+  font-size: 64px;
   font-weight: 700;
   line-height: 90px;
   align-self: stretch;
+  text-shadow: 0px 5.333px 80px 0 rgba(230, 91, 4, 0.287);
+}
+.hero--section--title:hover {
+  color: var(--burnmagma);
 }
 .hero--section--title--color {
   color: var(--primary);
 }
-.hero--section-description {
+.hero--section--description {
   color: var(--darkmagma);
   font-size: 24px;
   font-weight: 400;
@@ -318,17 +327,67 @@ h2 {
 }
 /* Skills Style Ends */
 
+/* Research Section Style */
+.research--section--card {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+  border-radius: 10.6px;
+  background: var(--bg-shade);
+  min-height: 250px;
+}
+.research--section--card:hover {
+  border-bottom: 4px solid var(--primary);
+}
+.research--section--card:hover .research--section--description {
+  color: var(--darkmagma);
+}
+.research--section--img {
+  display: flex;
+  padding: 13.3px;
+  justify-content: center;
+  align-items: center;
+  gap: 13.3px;
+  border-radius: 10.6px;
+  background: #fff;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+}
+.research--section--card--content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+.research--section--title {
+  color: var(--heading-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+}
+.research--section--description {
+  color: var(--black);
+  font-size: 21.3px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+/* Research Style Ends */
+
 /* About Us */
 .about--section {
   display: grid;
-  padding: 133.3px 85.3px;
+  padding: 133.3px 100px;
   align-items: center;
-  gap: 114.6px;
+  gap: 40px;
   grid-template-columns: repeat(2, 1fr);
 }
 .about--section--img > img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 /* About Us Ends */
 
@@ -401,6 +460,35 @@ h2 {
   stroke: #006b6a;
 }
 /* Portfolio Ends */
+
+.galleryContainer {
+  display: flex;
+  flex-direction: row;
+  margin-right: 80px;
+  margin-bottom: 48px;
+  margin-left: 80px;
+  padding-bottom: 150px;
+  min-width: 100%;
+}
+
+.nextArrow {
+  display: flex; /* Hide arrows by default */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -200;
+  cursor: pointer;
+  /* Style your arrows (color, size, etc.) here */
+}
+
+.prevArrow {
+  display: flex; /* Hide arrows by default */
+  top: 50%;
+  transform: translateY(50%);
+  z-index: -100;
+  cursor: pointer;
+  /* Style your arrows (color, size, etc.) here */
+}
+
 
 /* Testimonial */
 .testimonial--section {
@@ -533,6 +621,15 @@ input[type="checkbox"] {
   align-items: center;
   align-self: stretch;
 }
+.footer--image--container{
+  width: 20%;
+  height: 20%;
+}
+
+.footer--image--container > img {
+  width: 60%;
+  height: 60%;
+}
 .footer--items > ul {
   list-style: none;
   display: flex;
@@ -548,6 +645,22 @@ input[type="checkbox"] {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.footer--privacy--statement {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-self: stretch;
+}
+
+.footer--privacy--statement > ul {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
   gap: 16px;
   flex-shrink: 0;
   text-decoration: none;
@@ -572,7 +685,7 @@ input[type="checkbox"] {
 }
 
 /* Responsive Screens */
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1500px) {
   .hero--section--title {
     font-size: 68px;
     line-height: 70px;
@@ -583,7 +696,7 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1500px) {
   .skills--section--heading {
     font-size: 54px;
     line-height: 70px;
@@ -607,7 +720,7 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
   .btn-outline-primary {
     display: none;
   }
@@ -705,7 +818,7 @@ input[type="checkbox"] {
   transition: all ease-in-out 0.2s;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
   .nav__hamburger {
     display: flex;
     z-index: 200;
@@ -719,7 +832,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255);
-    top: -20rem;
+    top: -35rem;
     left: 0;
     width: 100%;
     transition: all ease-in-out 0.4s;
