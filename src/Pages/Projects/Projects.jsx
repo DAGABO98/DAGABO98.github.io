@@ -1,11 +1,12 @@
 import data from "../../data/index.json";
+import classes from "./Projects.module.css"
 
 export default function Projects() {
   return (
-    <section className="skills--section" id="Projects">
-      <div className="portfolio--container-box">
-            <div className="portfolio--container">
-                <h1 className="hero--section--heading">Projects</h1>
+    <section className={classes.section} id="Projects">
+      <div className={classes.portfolioContainerBox}>
+            <div className={classes.portfolioContainer}>
+                <h1 className={classes.sectionTitle}>Projects</h1>
             </div>
             <div>
             <button className="btn btn-github">
@@ -27,18 +28,18 @@ export default function Projects() {
             </button>
             </div>
         </div>
-        <div className="portfolio--section--container">
+        <div className={classes.sectionContainer}>
             {data?.portfolio?.map((item, index) => (
-            <div key={index} className="portfolio--section--card">
-                <div className="portfolio--section--img">
+            <div key={index} className={classes.sectionCard}>
+                <div className={classes.sectionImg}>
                     <img src={item.src} alt="Placeholder" />
                 </div>
-                <div className="portfolio--section--card--content">
+                <div className={classes.sectionCardContent}>
                     <div>
-                        <h3 className="portfolio--section--title">{item.title}</h3>
+                        <h3 className={classes.sectionCardTitle}>{item.title}</h3>
                         <p className="text-md">{item.description}</p>
                     </div>
-                    <p className="text-sm portfolio--link">
+                    <p className={classes.portfolioLink}>
                         {item.link}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
