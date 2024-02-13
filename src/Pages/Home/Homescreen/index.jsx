@@ -1,12 +1,12 @@
-import AboutMe from "../AboutMe";
-import Footer from "../Footer";
-import HeroSection from "../HeroSection";
-import Hobbies from "../Hobbies";
-import ProfessionalExperience from "../ProfessionalExperience";
-import Projects from "../Projects";
-import Research from "../Research";
-import Teaching from "../Teaching";
-import ContactMe from "../ContactMe";
+import AboutMe from "../../AboutMe/AboutMe";
+import Footer from "../Components/Footer/Footer";
+import HeroSection from "../../Introduction/Introduction";
+import Hobbies from "../../Hobbies/Hobbies";
+import ProfessionalExperience from "../../ProfessionalExperience/ProfessionalExperience";
+import Projects from "../../Projects/Projects";
+import Research from "../../Research/Research";
+import Teaching from "../../Teaching/Teaching";
+import ContactMe from "../Components/ContactMe/ContactMe";
 
 export default function Home() {
     return (

@@ -1,0 +1,57 @@
+@import url("../../data/colors.css");
+
+.sectionTitle {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 90px;
+    align-self: stretch;
+    text-shadow: 0px 5.333px 80px 0 rgba(230, 91, 4, 0.287);
+  }
+.sectionTitle:hover {
+    color: var(--burnmagma);
+  }
+
+.sectionDescription {
+    color: var(--darkmagma);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+
+.aboutSection {
+    display: grid;
+    padding: 133.3px 100px;
+    align-items: center;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+.aboutSectionImg > img {
+    width: 80%;
+    height: 80%;
+  }
+
+.sectionContentBox > button {
+    margin-top: 21.333px;
+  }
+
+/* Responsive Screens */
+@media only screen and (max-width: 1500px) {
+    .sectionTitle {
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .aboutSection{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .sectionContentBox {
+        align-items: center;
+        gap: 10px;
+    }
+}

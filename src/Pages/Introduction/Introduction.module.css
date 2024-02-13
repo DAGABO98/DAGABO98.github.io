@@ -1,0 +1,85 @@
+@import url("../../data/colors.css");
+
+/* Introduction Section Style */
+.section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 133.333px 85.333px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    background-color: var(--bg-shade);
+  }
+  .sectionContentBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+  .sectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 21.333px;
+  }
+  .sectionContentBox > button {
+    margin-top: 21.333px;
+  }
+  .sectionIntro {
+    color: var(--heading-color);
+    font-size: 32px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .sectionTitle {
+    color: var(--heading-color);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 90px;
+    align-self: stretch;
+    text-shadow: 0px 5.333px 80px 0 rgba(230, 91, 4, 0.287);
+  }
+  .sectionTitle:hover {
+    color: var(--burnmagma);
+  }
+
+  .sectionDescription {
+    color: var(--darkmagma);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+  .sectionImg {
+    display: flex;
+  }
+  .sectionImg > img {
+    width: 80%;
+    height: 80%;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    .section {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-bottom: 70px;
+    }
+    .sectionTitle,
+    .sectionDescription {
+      text-align: center;
+    }
+    .sectionContent,
+    .sectionContentBox {
+      align-items: center;
+    }
+    .sectionTitle {
+      font-size: 35px;
+      line-height: 40px;
+    }
+    .sectionContentBox {
+      gap: 10px;
+    }
+  }
